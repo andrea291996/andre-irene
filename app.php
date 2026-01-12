@@ -10,13 +10,13 @@ declare(strict_types=1);
 // __DIR__ è la cartella in cui si trova questo file, quindi i percorsi sono relativi al progetto.
 require __DIR__ . '/lib.php';
 
-
+$cfg['strict'] = false;
 // Usiamo try/catch per intercettare eccezioni (errori) e gestirle in modo controllato.
 try {
     // 1) Caricamento configurazione
     $cfg = load_config(__DIR__ . '/config.php');
     // 2) Parsing degli argomenti della riga di comando
-    [$cmd, $opts] = parse_cli_args($argv, (bool)$cfg['strict'== false]);
+    [$cmd, $opts] = parse_cli_args($argv, (bool)$cfg['strict']);
 
 
     // 3) Comando di aiuto: stampa una mini guida e termina con exit code 0 (successo).
