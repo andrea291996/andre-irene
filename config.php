@@ -15,6 +15,7 @@ return [
     'log_channel' => 'file',
     'log_level'   => 'debug',   // debug|info|warn|error
     'log_file'    => __DIR__ . '/audit.log',
+    'log_format' => 'text', // text|json
 
     // parsing CLI
     'strict' => true,
