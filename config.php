@@ -18,5 +18,5 @@ return [
     'log_format' => 'text', // text|json
 
     // parsing CLI
-    'strict' => true,
+    'strict' => false,
 ];

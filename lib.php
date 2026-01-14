@@ -40,6 +40,7 @@ function load_config(string $path): array {
  * Convenzione: il comando è in $argv[1], le opzioni sono in formato --chiave=valore.
  */
 function parse_cli_args(array $argv, bool $strict): array {
+    
     // Sintassi:
     // php app.php audit:ping --user=alice --action=login
     // Se non viene passato alcun comando, mostriamo l'help
@@ -63,7 +64,7 @@ function parse_cli_args(array $argv, bool $strict): array {
         }
         else {
             // Argomento non riconosciuto: in modalità strict blocchiamo l'esecuzione
-            $strict = false;
+            
             if ($strict) {
                 throw new InvalidArgumentException("Unknown argument: {$a}");
             }
