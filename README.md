@@ -86,7 +86,7 @@ Changing configuration values will affect the final output when running `app.php
 
 ---
 
-## HELP
+## Help
 
 The help command can be invoked by passing `-h`, `--help`, or `help` as an argument.
 
