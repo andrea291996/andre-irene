@@ -10,7 +10,7 @@ declare(strict_types=1);
 // __DIR__ è la cartella in cui si trova questo file, quindi i percorsi sono relativi al progetto.
 require __DIR__ . '/lib.php';
 
-$cfg['strict'] = false;
+
 // Usiamo try/catch per intercettare eccezioni (errori) e gestirle in modo controllato.
 try {
     // 1) Caricamento configurazione
