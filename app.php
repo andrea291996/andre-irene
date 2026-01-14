@@ -25,7 +25,7 @@ try {
         echo "Commands:\n";
         echo "  audit:ping                 healthcheck\n";
         echo "  audit:log --user=U --action=A --level=L  write an audit log event\n";
-        echo "  audit:whoami --user=U\n";
+        echo "  audit:whoami --user=U  write user name\n";
         exit(0);
     }
 
