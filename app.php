@@ -52,6 +52,13 @@ try {
         exit(0);
     }
 
+    if ($cmd === 'audit:whoami') {
+        $user = $opts['user'] ?? null;
+        echo "I am $user";
+        exit(0);
+    }
+    
+
 
     // Se arriviamo qui, il comando non è supportato: generiamo un'eccezione.
     throw new InvalidArgumentException("Unknown command: {$cmd}");

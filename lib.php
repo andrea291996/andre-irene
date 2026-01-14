@@ -48,7 +48,7 @@ function parse_cli_args(array $argv, bool $strict): array {
     $opts = [
         'user'   => null,
         'action' => null,
-        'level' => 'info'
+        'level' => 'info',
     ];
 
     // Scorriamo tutti gli argomenti a partire da indice 2 (dopo script e comando)
