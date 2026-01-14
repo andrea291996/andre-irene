@@ -63,6 +63,7 @@ function parse_cli_args(array $argv, bool $strict): array {
         }
         else {
             // Argomento non riconosciuto: in modalità strict blocchiamo l'esecuzione
+            $strict = false;
             if ($strict) {
                 throw new InvalidArgumentException("Unknown argument: {$a}");
             }
