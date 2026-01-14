@@ -78,6 +78,19 @@ Changing configuration values will affect the final output when running `app.php
 
 ---
 
+## HELP
+
+The help command can be invoked by passing `-h`, `--help`, or `help` as an argument.
+
+When executed, it displays the main information about the application, including the application name and the current version.
+
+It then shows the list of available commands, along with a brief description of their purpose:
+- `audit:ping`: checks whether the application is running correctly (health check)
+- `audit:log`: records an audit event
+- `audit:whoami`: displays the current user
+
+For each command, any supported arguments and their usage are also indicated.
+
 ## Educational Purpose
 
 This repository is intended to be used for:
