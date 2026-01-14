@@ -1,0 +1,8 @@
+[2026-01-12T12:04:20+00:00] error app.error {"msg":"Missing --user or --action"} text
+[2026-01-12T12:05:37+00:00] error app.error {"msg":"Unknown argument: --andrea"} text
+[2026-01-12T12:05:55+00:00] error app.error {"msg":"Unknown argument: andrea"} text
+[2026-01-12T12:06:05+00:00] error app.error {"msg":"Unknown argument: --user"} text
+[2026-01-12T12:06:26+00:00] error app.error {"msg":"Missing --user or --action"} text
+[2026-01-12T12:06:32+00:00] error app.error {"msg":"Missing --user or --action"} text
+[2026-01-12T12:06:44+00:00] info audit.event {"user":"U","action":"A"} text
+[2026-01-12T12:07:46+00:00] info audit.event {"user":"U","action":"A"} text

@@ -12,7 +12,7 @@ return [
     'version'  => '0.1.0',
 
     // logging: 'stderr' oppure 'file'
-    'log_channel' => 'file',
+    'log_channel' => 'stderr',
     'log_level'   => 'debug',   // debug|info|warn|error
     'log_file'    => __DIR__ . '/audit.log',
     'log_format' => 'text', // text|json
