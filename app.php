@@ -24,7 +24,7 @@ try {
         echo $cfg['app_name'] . " v" . $cfg['version'] . "\n";
         echo "Commands:\n";
         echo "  audit:ping                 healthcheck\n";
-        echo "  audit:log --user=U --action=A   write an audit log event\n";
+        echo "  audit:log --user=U --action=A --level=L  write an audit log event\n";
         exit(0);
     }
 
@@ -47,7 +47,7 @@ try {
         }
 
 
-        log_event($cfg, 'info', 'audit.event', ['user' => $user, 'action' => $action], $level);
+        log_event($cfg, $level, 'audit.event', ['user' => $user, 'action' => $action]);
         echo "ok\n";
         exit(0);
     }
