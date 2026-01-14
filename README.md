@@ -5,13 +5,13 @@ It demonstrates how to structure a small PHP project, separate configuration and
 
 The project intentionally avoids frameworks, databases, and frontend technologies to keep the focus on **core PHP concepts**.
 
-The project is composed of the following files: app.php, config.php, and lib.php.
+The project is composed of the following files: `app.php`, `config.php`, and `lib.php`.
 
-The app.php file contains the core of our small program: it loads the lib.php file containing the functions used by the program; it loads the config.php file, which contains the configuration data in an associative array; through conditional statements, it recognizes the commands and options entered by the user and executes the functions associated with them.
+The `app.php` file contains the core of our small program: it loads the lib.php file containing the functions used by the program; it loads the config.php file, which contains the configuration data in an associative array; through conditional statements, it recognizes the commands and options entered by the user and executes the functions associated with them.
 
-The config.php file returns an associative configuration array and enables strict type checking (useful to avoid “silent” errors).
+The `config.php` file returns an associative configuration array and enables strict type checking (useful to avoid “silent” errors).
 
-The lib.php file is the internal library of the program and collects the “support” (helper) functions used by the CLI app.
+The `lib.php` file is the internal library of the program and collects the “support” (helper) functions used by the CLI app.
 
 ---
 
